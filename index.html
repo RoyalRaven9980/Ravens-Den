@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Raven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Royal Raven's Channel</h1>
+            <p>If you enjoy immersive playthroughs of horror, adventure, strategy games, etc., then you are in the right place! Join me as we explore thrilling narratives and challenging gameplay.</p>
+        </header>
+
+        <nav class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'about')">About</button>
+            <button class="tab-button" onclick="openTab(event, 'merch')">Merch</button>
+            <button class="tab-button" onclick="openTab(event, 'support')">Support</button>
+            <button class="tab-button" onclick="openTab(event, 'info')">Info</button>
+        </nav>
+
+        <div id="about" class="tab-content active">
+            <section class="about">
+                <h2>About Me</h2>
+                <p>I'm Royal Raven, a passionate gamer who loves sharing my gaming experiences with the world. I specialize in creating engaging content, whether it's facing terrifying monsters or strategizing my way through complex challenges. I aim to entertain and engage my audience!</p>
+            </section>
+
+            <section class="featured-games">
+                <h2>Featured Games</h2>
+                <ul>
+                    <li>Pokémon</li>
+                    <li>Minecraft</li>
+                    <li>Resident Evil Series</li>
+                    <li>Among Us</li>
+                    <li>Terraria</li>
+                    <li>Dark and Darker</li>
+                </ul>
+            </section>
+        </div>
+
+        <div id="merch" class="tab-content">
+            <section class="merch">
+                <h2>Merch</h2>
+                <p>Check out my latest merchandise, including apparel, accessories, and more!</p>
+                <a href="#" class="button">Visit Merch Store</a>
+            </section>
+        </div>
+
+        <div id="support" class="tab-content">
+            <section class="show-support">
+                <h2>Show Your Support!</h2>
+                <p>If you enjoy my content and would like to support me, consider donating!</p>
+                <a href="https://paypal.me/RoyalRaven03?country.x=US&locale.x=en_US" target="_blank" class="button">Donate via PayPal</a>
+            </section>
+        </div>
+
+        <div id="info" class="tab-content">
+            <section class="contact">
+                <h2>Contact Me</h2>
+                <p>Have questions or suggestions? Feel free to reach out!</p>
+                <p>Email: <a href="mailto:RoyalRaven03@yahoo.com">RoyalRaven03@yahoo.com</a></p>
+            </section>
+
+            <section class="community">
+                <h2>Join the Community</h2>
+                <p>Join our Discord server to connect with other fans, discuss games, and participate in community events!</p>
+                <a href="https://discord.gg/UDbF4htWMn" class="button">Join Discord</a>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Royal Raven. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tabbuttons;
+
+            // Hide all tab content
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+
+            // Remove the active class from all tab buttons
+            tabbuttons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabbuttons.length; i++) {
+                tabbuttons[i].classList.remove("active");
+            }
+
+            // Show the current tab and add an "active" class to the button that opened the tab
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+body {
+    background-color: #333333; /* Darker gray background */
+    color: #dcdcdc;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px; /* Increased maximum width for more spread */
+    margin: auto;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #9b59b6;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #8e44ad;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Align list to the left */
+}
+
+li {
+    margin: 5px 0;
+}
+
+a {
+    color: #9b59b6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8e44ad;
+}
+
+.button {
+    display: block; /* Change display to block for better alignment */
+    background-color: #9b59b6;
+    color: white; /* Set default text color to white */
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 0; /* Vertical margin for spacing */
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease; /* Added color transition */
+}
+
+.button:hover {
+    background-color: #8e44ad;
+    color: white; /* Change text color to white on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.platform-buttons {
+    display: flex; /* Use flex for alignment */
+    flex-direction: column; /* Align buttons in a column */
+    align-items: flex-start; /* Align buttons to the left */
+    margin: 10px 0; /* Add some vertical spacing */
+}
+
+.tabs {
+    display: flex; /* Display tabs in a row */
+    justify-content: flex-start; /* Align tabs to the left */
+    margin-bottom: 20px; /* Space below tabs */
+}
+
+.tab-button {
+    background-color: #9b59b6; /* Tab background color */
+    color: white; /* Tab text color */
+    padding: 10px 15px; /* Tab padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-right: 10px; /* Space between tabs */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.tab-button:hover {
+    background-color: #8e44ad; /* Darker purple on hover */
+}
+
+.tab-button.active {
+    background-color: #8e44ad; /* Active tab background */
+}
+
+.tab-content {
+    display: none; /* Hide all tab content by default */
+}
+
+.tab-content.active {
+    display: block; /* Show active tab content */
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #b0b0b0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    .button {
+        padding: 8px 16px;
+    }
+}
